@@ -1,16 +1,15 @@
+<!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
-<title>I am back 2019</title>
+<title>文章归档 | I am back 2019</title>
 <meta name="description" content="不在沉默中爆发就在沉默中死亡">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://yoonsu.github.io/favicon.ico?v=1558522134645">
+<link rel="shortcut icon" href="https://yoonsu.github.io/favicon.ico?v=1559307336486">
 <link rel="stylesheet" href="https://yoonsu.github.io/styles/main.css">
 
 
@@ -18,152 +17,130 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://yoonsu.github.io">
-        <img class="avatar" src="https://yoonsu.github.io/images/avatar.png?v=1558522134645" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://yoonsu.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://yoonsu.github.io">
+        <img src="https://yoonsu.github.io/images/avatar.png?v=1559307336486" class="site-logo">
         <h1 class="site-title">I am back 2019</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="/" class="menu purple-link">
+          <a href="/" class="site-nav">
             首页
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
+          <a href="/archives" class="site-nav">
             归档
           </a>
         
       
         
-          <a href="/tags" class="menu purple-link">
+          <a href="/tags" class="site-nav">
             标签
           </a>
         
       
         
-          <a href="/post/about" class="menu purple-link">
+          <a href="/post/about" class="site-nav">
             关于
           </a>
         
       
     </div>
   </div>
-</transition>
-
-
-        <div class="content-container">
-          
-          
-
-<div class="archives-container">
-  
-    <h2 class="year">2019</h2>
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-        <article class="post">
-          <a href="https://yoonsu.github.io/post/DjXWkLZGe">
-            <h2 class="post-title">
-              我想继续的坚持
-              <small>2019-05-22</small>
-            </h2>
-          </a>
-        </article>
+        
       
-    
+        
       
-        <article class="post">
-          <a href="https://yoonsu.github.io/post/C_eiYiVKZ">
-            <h2 class="post-title">
-              懒
-              <small>2019-05-19</small>
-            </h2>
-          </a>
-        </article>
+        
       
-    
+        
       
-        <article class="post">
-          <a href="https://yoonsu.github.io/post/zhe-li-jiang-shi-yi-ge-sui-sui-nian">
-            <h2 class="post-title">
-              这里将是一个碎碎念
-              <small>2019-04-05</small>
-            </h2>
-          </a>
-        </article>
+        
       
-    
-      
-    
-  
-    <h2 class="year">2018</h2>
-    
-      
-    
-      
-    
-      
-    
-      
-        <article class="post">
-          <a href="https://yoonsu.github.io/post/hello-hve-notes">
-            <h2 class="post-title">
-              Hello Hve Notes
-              <small>2018-12-12</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-  
+    </div>
+    <div class="site-description">
+      不在沉默中爆发就在沉默中死亡
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes and Thanks
+    </div>
+  </div>
 </div>
 
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+
+          <h2 class="archives-title">文章归档</h2>
+          <div class="archives-container">
+            
+              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2019</h2>
+              
+                
+                  <article class="post">
+                    <a href="https://yoonsu.github.io/post/Yrcr_bWcq">
+                      <h2 class="post-title">
+                        自白
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+                
+              
+            
+              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2018</h2>
+              
+                
+              
+                
+                  <article class="post">
+                    <a href="https://yoonsu.github.io/post/hello-hve-notes">
+                      <h2 class="post-title">
+                        Hello Hve Notes
+                      </h2>
+                    </a>
+                  </article>
+                
+              
+            
+          </div>
+
+          <div class="pagination-container">
+  
+  
+</div>
 
         </div>
-
-        <div class="site-footer">
-  <div class="slogan">不在沉默中爆发就在沉默中死亡</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by Hve Notes and Thanks
-</div>
-
-
       </div>
-      <script type="application/javascript">
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
 
 hljs.initHighlightingOnLoad()
 
@@ -179,6 +156,5 @@ var app = new Vue({
 
 
 
-    </div>
   </body>
 </html>

@@ -1,18 +1,15 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>我想继续的坚持 | I am back 2019</title>
 <meta name="description" content="不在沉默中爆发就在沉默中死亡">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://yoonsu.github.io/favicon.ico?v=1558522134645">
+<link rel="shortcut icon" href="https://yoonsu.github.io/favicon.ico?v=1559307336486">
 <link rel="stylesheet" href="https://yoonsu.github.io/styles/main.css">
 
 
@@ -26,119 +23,112 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://yoonsu.github.io">
-        <img class="avatar" src="https://yoonsu.github.io/images/avatar.png?v=1558522134645" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://yoonsu.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://yoonsu.github.io">
+        <img src="https://yoonsu.github.io/images/avatar.png?v=1559307336486" class="site-logo">
         <h1 class="site-title">I am back 2019</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="/" class="menu purple-link">
+          <a href="/" class="site-nav">
             首页
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
+          <a href="/archives" class="site-nav">
             归档
           </a>
         
       
         
-          <a href="/tags" class="menu purple-link">
+          <a href="/tags" class="site-nav">
             标签
           </a>
         
       
         
-          <a href="/post/about" class="menu purple-link">
+          <a href="/post/about" class="site-nav">
             关于
           </a>
         
       
     </div>
   </div>
-</transition>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      不在沉默中爆发就在沉默中死亡
+    </div>
+    <div class="site-footer">
+      Powered by Hve Notes and Thanks
+    </div>
+  </div>
+</div>
 
 
-      <div class="content-container">
-        <div class="post-detail">
-          
-          <h2 class="post-title">我想继续的坚持</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2019-05-22</span>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">我想继续的坚持</h2>
+            <div class="post-date">2019-05-22</div>
             
-          </div>
-          <div class="post-content">
-            <p>下午的时候表弟这边传达了一个信息就是希望我们能继续走下去。我也想，真的，我跟你们分开的日子真的很难过，特别是刚开始的时候。刚开始晚上都要失眠，偶然会突然流泪，碰到触景伤情的更不用多说。我偷偷的去看过你们，好几次以为那就是你的时候却发现不是你，怕你看到我，怕孩子看到我。因为我的原因，给你们带来了很大的伤害，我没脸面对你们。所以我依然会选择跟你离婚，但是我不会离开你们。因为你说的对，不能因为我的问题导致小孩出现什么问题。其实我也想过我的问题到底能给小孩带来多大的问题，可是这些又是争辩的回来的，你既然会拿这个来做为筹码，那我也是不想去争辩的。毕竟你的出发点是为了孩子，至于其他的，想那么多干嘛？爱一个人不就是要包容她的嘛？</p>
+            <div class="post-content">
+              <p>下午的时候表弟这边传达了一个信息就是希望我们能继续走下去。我也想，真的，我跟你们分开的日子真的很难过，特别是刚开始的时候。刚开始晚上都要失眠，偶然会突然流泪，碰到触景伤情的更不用多说。我偷偷的去看过你们，好几次以为那就是你的时候却发现不是你，怕你看到我，怕孩子看到我。因为我的原因，给你们带来了很大的伤害，我没脸面对你们。所以我依然会选择跟你离婚，但是我不会离开你们。因为你说的对，不能因为我的问题导致小孩出现什么问题。其实我也想过我的问题到底能给小孩带来多大的问题，可是这些又是争辩的回来的，你既然会拿这个来做为筹码，那我也是不想去争辩的。毕竟你的出发点是为了孩子，至于其他的，想那么多干嘛？爱一个人不就是要包容她的嘛？</p>
 <p>所以若你愿意，我会遵照你的做法去做。因为某些原因很难再实现以前的愿望了，我也知道自己说的话就如放屁那样，说过就完了。若是上天再给我一次机会，我依然还是会选择你的，但是再那时我必须改变自己。错了，就要改正，有些错是要花一辈子的时间去改正的，而的我罪也要一辈子的来赎。</p>
 <p>我想孩子们了。。。。。</p>
 <p>天伦之乐，对于我来说是奢侈品；钱，对于我来说也是奢侈品。所以我有钱=天伦之乐。</p>
 
+            </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
+
         </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://yoonsu.github.io/post/C_eiYiVKZ">
-              <h3 class="post-title">
-                下一篇：懒
-              </h3>
-            </a>
-          </div>
-          
       </div>
-
-      
-        
-          <div id="gitalk-container"></div>
-        
-
-        
-      
-
-      <div class="site-footer">
-  <div class="slogan">不在沉默中爆发就在沉默中死亡</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by Hve Notes and Thanks
-</div>
-
-
     </div>
-    <script type="application/javascript">
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
 
 hljs.initHighlightingOnLoad()
 
